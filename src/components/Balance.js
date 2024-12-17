@@ -7,7 +7,7 @@ export const Balance = () => {
     .map((transaction) => transaction.amount)
     .reduce((acc, item) => (acc += item), 0)
     .toFixed(2);
-  const sign = total < 0 ? "-" : "+";
+  const sign = total < 0 ? "-" : "";
   return (
     <>
       <h4>Your Balance</h4>
